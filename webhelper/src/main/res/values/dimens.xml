@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_text_34">11dp</dimen>
+    <dimen name="main_text_36">12dp</dimen>
+    <dimen name="main_text_39">13dp</dimen>
+    <dimen name="main_text_42">14dp</dimen>
+    <dimen name="main_text_45">15dp</dimen>
+    <dimen name="main_text_48">16dp</dimen>
+    <dimen name="main_text_51">17dp</dimen>
+    <dimen name="main_text_60">20dp</dimen>
+    <dimen name="main_text_66">22dp</dimen>
+    <dimen name="main_text_50">17dp</dimen>
+    <dimen name="main_text_57">19dp</dimen>
+    <dimen name="main_text_80">27dp</dimen>
+    <dimen name="main_text_54">18sp</dimen>
+    <dimen name="pic_corner_radius">2dp</dimen>
+    <dimen name="line_height">0.5dp</dimen>
+    <dimen name="share_dialog_font_padding_top">10dp</dimen>
+
+</resources>

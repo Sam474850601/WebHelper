@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_share"
+        android:icon="@android:drawable/ic_menu_share"
+        android:title="share"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_test0"
+        android:icon="@android:drawable/ic_dialog_email"
+        android:title="test0"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_test1"
+        android:icon="@android:drawable/ic_dialog_email"
+        android:title="test1"
+        app:showAsAction="withText" />
+    <item
+        android:id="@+id/action_test2"
+        android:icon="@android:drawable/ic_dialog_email"
+        android:title="test0"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_test3"
+        android:icon="@android:drawable/ic_dialog_email"
+        android:title="test0"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_test4"
+        android:icon="@android:drawable/ic_dialog_email"
+        android:title="test0"
+        app:showAsAction="ifRoom" />
+</menu>

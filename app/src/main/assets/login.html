@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>test1</title>
+    <script src="./jquery.min.js"></script>
+    <script>
+
+
+        function responseLoginFromJavaApi(message )
+        {
+             $("#message").html(message)
+        }
+
+
+         function login(username, password)
+         {
+             var userData = {'username':username, 'password':password};
+             var data = JSON.stringify(userData);
+
+             var requestApi ={
+                                'component':'userConsumeApi',
+                                'method':'login',
+                                'callback':'responseLoginFromJavaApi',
+                                'data':data
+                            };
+             window.userAction.invoke(JSON.stringify(requestApi));
+         }
+
+
+         $(document).ready(function(){
+
+         $("#btnLogin").click(function(){
+            var username = $("#username").val();
+            var password = $("#password").val();
+            login(username, password);
+         });
+
+       });
+
+    </script>
+
+
+</head>
+
+<body>
+
+用户: <input type="text" id="username" value="Same.li"/><br/>
+密码: <input type="password" id="password" value="666666"/><br/>
+<button id="btnLogin">登录</button><br/>
+
+<div>
+    响应结果:<span id="message"></span>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>test1</title>
+    <script src="./jquery.min.js"></script>
+    <script>
+
+
+        var requestApi ={
+                                'component':'toolbarSettingApi',
+                                'method':'',
+                                'data': ''
+                            };
+        function update(method, data)
+        {
+            requestApi.method = method;
+            requestApi.data = data;
+            var jsonStr = JSON.stringify(requestApi);
+            window.webhelperAction.invoke(jsonStr);
+        }
+
+        $(document).ready(function(){
+
+         $("#btnTitle").click(function(){
+            var title = $("#txTitle").val();
+            update('updateTitle', title);
+         });
+
+         $("#btnSubTitle").click(function(){
+            var subTitle = $("#txSubTitle").val();
+            update('updateSubtitle', subTitle);
+         });
+
+
+        $("#btnHideLeftItemIcon").click(function(){
+            var subTitle = $("#txSubTitle").val();
+            update('hideLeftItemIcon', subTitle);
+         });
+
+        $("#btnHideMiddleItemIcon").click(function(){
+            var subTitle = $("#txSubTitle").val();
+            update('hideMiddleItemIcon', subTitle);
+         });
+
+
+        $("#btnShowLeftItemIcon").click(function(){
+            var subTitle = $("#txSubTitle").val();
+            update('showLeftItemIcon', '');
+         });
+
+        $("#btnShowMiddleItemIcon").click(function(){
+            update('showMiddleItemIcon', '');
+         });
+
+       });
+
+
+    </script>
+
+
+</head>
+
+<body>
+<div>
+    <button id="btnTitle">标题</button><span><input id="txTitle" type="text"/></span>
+</div>
+
+<div>
+    <button id="btnSubTitle">副标题</button><span><input id="txSubTitle" type="text"/></span>
+</div>
+
+
+<div>
+    <button id="btnHideLeftItemIcon">hideLeftItemIcon</button>
+</div>
+
+<div>
+    <button id="btnHideMiddleItemIcon">hideMiddleItemIcon</button>
+</div>
+
+<div>
+    <button id="btnShowLeftItemIcon">showLeftItemIcon</button>
+</div>
+
+<div>
+    <button id="btnShowMiddleItemIcon">showMiddleItemIcon</button>
+</div>
+</body>
+
+</html>

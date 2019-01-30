@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>test1</title>
+    <script src="./jquery.min.js"></script>
+    <script>
+
+
+        function share()
+        {
+
+                var data = {
+                    'title':'测试',
+                    'content':'测试',
+                    'imgUrl':"http://avatar.csdn.net/4/E/D/3_yoyo_newbie.jpg",
+                    'targetUrl':"http://www.baidu.com"
+                };
+                var requestApi ={
+                                'component':'dialogs',
+                                'method':'openUnifiedShareDialog',
+                                'data': data
+                            };
+                alert(JSON.stringify(requestApi));
+                window.webhelperAction.invoke(JSON.stringify(requestApi));
+        }
+
+        function share2()
+        {
+
+                var qq = {
+                    'title':'qq',
+                    'content':'qq',
+                    'imgUrl':"http://avatar.csdn.net/4/E/D/3_yoyo_newbie.jpg",
+                    'targetUrl':"http://www.baidu.com"
+                };
+
+                var qzone = {
+                    'title':'qzone',
+                    'content':'qzone',
+                    'imgUrl':"http://avatar.csdn.net/4/E/D/3_yoyo_newbie.jpg",
+                    'targetUrl':"http://www.baidu.com"
+                };
+
+
+                var sina = {
+                    'title':'sina',
+                    'content':'sina',
+                    'imgUrl':"http://avatar.csdn.net/4/E/D/3_yoyo_newbie.jpg",
+                    'targetUrl':"http://www.baidu.com"
+                };
+
+                var wechat = {
+                    'title':'wechat',
+                    'content':'wechat',
+                    'imgUrl':"http://avatar.csdn.net/4/E/D/3_yoyo_newbie.jpg",
+                    'targetUrl':"http://www.baidu.com"
+                };
+
+
+                var wechatCircle = {
+                    'title':'wechatCircle',
+                    'content':'wechatCircle',
+                    'imgUrl':"http://avatar.csdn.net/4/E/D/3_yoyo_newbie.jpg",
+                    'targetUrl':"http://www.baidu.com"
+                };
+
+                var data = {
+                     'qq':qq,
+                     'qZone':qzone,
+                     'sina':sina,
+                     'wechat':wechat,
+                     'wechatCircle':wechatCircle
+
+                }
+
+                var requestApi ={
+                                'component':'dialogs',
+                                'method':'openShareDialog',
+                                'data': data
+                            };
+                alert(JSON.stringify(requestApi));
+                window.webhelperAction.invoke(JSON.stringify(requestApi));
+        }
+
+        $(document).ready(function(){
+
+         $("#btnShare").click(function(){
+                share();
+         });
+
+          $("#btnShare2").click(function(){
+                share2();
+         });
+
+       });
+
+    </script>
+
+
+</head>
+
+<body>
+<div>
+
+    <button id="btnShare">分享的信息平台一致</button><br/>
+    <button id="btnShare2">分享信息都可能不一致</button>
+</div>
+
+</body>
+
+</html>

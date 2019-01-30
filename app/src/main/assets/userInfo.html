@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>test1</title>
+    <script src="./jquery.min.js"></script>
+    <script>
+
+        function getInfo(userName)
+        {
+
+            var requestApi ={
+                                'component':'userInfo',
+                                'method':'all',
+                                'callback':'freshInfoFromJavaApi',
+                                'data': userName
+                            };
+
+            var jsonStr = JSON.stringify(requestApi);
+            window.userAction.invoke(jsonStr);
+        }
+
+        function freshInfoFromJavaApi(data)
+        {
+              var user = JSON.parse(data)
+             $("#age").html(user.age);
+             $("#nick").html(user.nikeName);
+             $("#desc").html(user.desc);
+        }
+
+
+       $(document).ready(function(){
+
+         $("#btnGetInfo").click(function(){
+            var userName = $("#userName").val();
+            getInfo(userName);
+         });
+
+       });
+
+
+    </script>
+
+
+</head>
+
+<body>
+
+用户: <input type="text" id="userName" value="Same.li"/><br/>
+
+<div>
+    昵称:<span id="nick"> </span>
+</div>
+<div>
+    年龄:<span id="age"> </span>
+</div>
+<div>
+    个人描述:<span id="desc"> </span>
+</div>
+
+<button id="btnGetInfo">获取用户信息</button>
+</body>
+
+</html>

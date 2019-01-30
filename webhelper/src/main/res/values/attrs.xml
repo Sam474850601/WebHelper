@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="X5PbWebView">
+        <attr name="progressHeight" format="dimension" />
+        <attr name="progressDrawable" format="reference"/>
+
+    </declare-styleable>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_color_1">#333333</color>
+    <color name="main_color_2">#666666</color>
+    <color name="main_color_3">#999999</color>
+    <color name="main_color_4">#c7c7c7</color>
+    <color name="main_color_5">#ff8a00</color>
+    <color name="main_color_7">#5c6368</color>
+    <color name="main_color_9">#5c6368</color>
+    <color name="maincolor">#09c767</color>
+    <color name="progressColor">#09c767</color>
+    <color name="main_color_6">#34c083</color>
+    <color name="white">#FFFFFF</color>
+    <color name="main_line_color">#e3e3e3</color>
+</resources>

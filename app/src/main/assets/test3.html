@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>test1</title>
+
+
+
+
+    <script src="./jquery.min.js"></script>
+    <script>
+
+        function freshMethod0FromJavaApi()
+        {
+            $("#sp_method0").html("支持无参数刷新回调");
+        }
+
+        function t1c_method0Clike()
+        {
+            var method= 'method0';
+            var requestApi ={
+                                'component':'component1',
+                                'method':method,
+                                'callback':'freshMethod0FromJavaApi'
+                             };
+            window.testAction.invoke(JSON.stringify(requestApi));
+
+        }
+
+
+        function t1c_method1Clike()
+        {
+            var method= 'method1';
+            var requestApi ={
+                                'component':'component1',
+                                'method':method
+                             };
+            window.testAction.invoke(JSON.stringify(requestApi));
+
+        }
+
+        function t1c_method2Clike()
+        {
+
+
+            var data = new Boolean(true);
+            var method= 'method2';
+            var requestApi ={
+                                'component':'component1',
+                                'method':method,
+                                'data': data
+                             };
+            window.testAction.invoke(JSON.stringify(requestApi));
+        }
+
+        function t1c_method3Clike()
+        {
+            var data = 6666;
+            var method= 'method3';
+            var requestApi ={
+                                'component':'component1',
+                                'method':method,
+                                'data': data
+                             };
+            window.testAction.invoke(JSON.stringify(requestApi));
+        }
+
+        function t1c_method4Clike()
+        {
+            var data = "2333333";
+            var method= 'method4';
+            var requestApi ={
+                                'component':'component1',
+                                'method':method,
+                                'data': data
+                             };
+            window.testAction.invoke(JSON.stringify(requestApi));
+        }
+
+        function t1c_method5Clike()
+        {
+            var data = {
+                            'data1':222,
+                             'data2':'dddddxxx'
+                        };
+
+            var method= 'method5';
+
+            var requestApi ={
+                                'component':'component1',
+                                'method':method,
+                                'data': data
+                             };
+            window.testAction.invoke(JSON.stringify(requestApi));
+        }
+
+
+
+        function freshMethod6FromJavaApi(data)
+        {
+            $("#sp_method6").html(data);
+        }
+
+
+        function t1c_method6Clike()
+        {
+            var method= 'method6';
+            var requestApi ={
+                                'component':'component1',
+                                'method':method,
+                                 callback:'freshMethod6FromJavaApi'
+                            };
+            window.testAction.invoke(JSON.stringify(requestApi));
+        }
+
+
+        function freshSp7FromJavaApi(data)
+        {
+            $("#sp_method7").html(data);
+        }
+
+
+        function t1c_method7Clike()
+        {
+            var method= 'method7';
+            var data = {
+                            'testParam1':'6666',
+                            'testParam2':'8888'
+                        };
+            var requestApi ={
+                                'component':'component1',
+                                'method':method,
+                                 callback:'freshSp7FromJavaApi',
+                                 data:data
+                            };
+            window.testAction.invoke(JSON.stringify(requestApi));
+        }
+
+        //....................
+
+
+
+        function t2c_method1Clike()
+        {
+            var method= 'method1';
+            var requestApi ={
+                                'component':'component2',
+                                'method':method
+                             };
+                             alert(requestApi);
+            window.testAction.invoke(JSON.stringify(requestApi));
+
+        }
+
+        function t2c_method2Clike()
+        {
+
+
+            var method= 'method2';
+            var requestApi ={
+                                'component':'component2',
+                                'method':method
+                             };
+            window.testAction.invoke(JSON.stringify(requestApi));
+        }
+
+
+        function t2c_method3Clike()
+        {
+
+
+            var method= 'method3';
+            var requestApi ={
+                                'component':'component2',
+                                'method':method
+                             };
+            window.testAction.invoke(JSON.stringify(requestApi));
+        }
+
+
+        function t2c_method4Clike()
+        {
+
+
+            var method= 'method4';
+            var data = "ssssssssss";
+            var requestApi ={
+                                'component':'component2',
+                                'method':method,
+                                'data':data
+                             };
+            window.testAction.invoke(JSON.stringify(requestApi));
+        }
+
+          function t2c_method5Clike()
+        {
+
+
+            var method= 'method5';
+            var data = {
+                            'id' : 6666,
+                            'name': 'same.li',
+                            'age' : 100000
+                        };
+            var requestApi ={
+                                'component':'component2',
+                                'method':method,
+                                'data':data
+                             };
+            window.testAction.invoke(JSON.stringify(requestApi));
+        }
+
+        function freshT2Method6FromJavaApi(data)
+        {
+            $("#sp_t2method6").html(data);
+        }
+
+          function t2c_method6Clike()
+        {
+
+
+            var method= 'method6';
+
+            var data = {
+                            'id' : 888,
+                            'name': 'same.li',
+                            'age' : 6666
+                        };
+
+            var requestApi ={
+                                'component':'component2',
+                                'method':method,
+                                 callback:'freshT2Method6FromJavaApi',
+                                 data:data
+                            };
+            window.testAction.invoke(JSON.stringify(requestApi));
+        }
+
+        function freshT2Method7FromJavaApi(data)
+        {
+            $("#sp_t2method7").html(data);
+        }
+
+
+         function t2c_method7Clike()
+        {
+
+
+            var method= 'method7';
+
+            var data = {
+                            'id' : 777,
+                            'name': 'same.li',
+                            'age' : 111
+                        };
+
+            var requestApi ={
+                                'component':'component2',
+                                'method':method,
+                                 callback:'freshT2Method7FromJavaApi',
+                                 data:data
+                            };
+            window.testAction.invoke(JSON.stringify(requestApi));
+        }
+
+
+          function freshT2Method8FromJavaApi(data)
+        {
+            $("#sp_t2method8").html(data);
+        }
+
+
+         function t2c_method8Clike()
+        {
+
+
+            var method= 'method8';
+
+            var data = {
+                            'id' : 8886,
+                            'name': 'same.li',
+                            'age' : 555
+                        };
+
+            var requestApi ={
+                                'component':'component2',
+                                'method':method,
+                                 callback:'freshT2Method8FromJavaApi',
+                                 data:data
+                            };
+            window.testAction.invoke(JSON.stringify(requestApi));
+        }
+
+         function filterMethodClike()
+        {
+
+            //test3C的method1将不会被执行，因为重写了过滤器。所有请求都被指定投射到
+            //test4C的method1
+            var method= 'method1';
+            var requestApi ={
+                                'component':'test3C',
+                                'method':method
+                            };
+            window.t2Action.invoke(JSON.stringify(requestApi));
+        }
+
+
+       $(document).ready(function(){
+
+         $("#t1c_method0").click(function(){
+                t1c_method0Clike();
+         });
+
+
+         $("#t1c_method1").click(function(){
+                t1c_method1Clike();
+         });
+
+       $("#t1c_method2").click(function(){
+                t1c_method2Clike();
+         });
+
+       $("#t1c_method3").click(function(){
+                t1c_method3Clike();
+       });
+
+       $("#t1c_method4").click(function(){
+                t1c_method4Clike();
+       });
+
+       $("#t1c_method5").click(function(){
+                t1c_method5Clike();
+       });
+
+       $("#t1c_method6").click(function(){
+                t1c_method6Clike();
+       });
+
+       $("#t1c_method7").click(function(){
+                t1c_method7Clike();
+       });
+
+       //........................
+
+       $("#t2c_method1").click(function(){
+                t2c_method1Clike();
+       });
+
+       $("#t2c_method2").click(function(){
+                t2c_method2Clike();
+       });
+
+       $("#t2c_method3").click(function(){
+                t2c_method3Clike();
+       });
+
+       $("#t2c_method4").click(function(){
+                t2c_method4Clike();
+       });
+
+
+      $("#t2c_method5").click(function(){
+                t2c_method5Clike();
+       });
+
+       $("#t2c_method6").click(function(){
+                t2c_method6Clike();
+       });
+
+
+       $("#t2c_method7").click(function(){
+                t2c_method7Clike();
+       });
+
+
+         $("#t2c_method8").click(function(){
+                t2c_method8Clike();
+       });
+
+
+         $("#filter_method").click(function(){
+                filterMethodClike();
+          });
+
+       });
+
+
+    </script>
+
+
+</head>
+
+<body>
+    <button id="t1c_method0">Test1Component method0</button> <br/><br/>
+    <div>
+        method0 callback value is :<span id="sp_method0"></span>
+    </div>
+    <button id="t1c_method1">Test1Component method1</button> <br/><br/>
+    <button id="t1c_method2"  >Test1Component method2</button> <br/><br/>
+    <button id="t1c_method3"  >Test1Component method3</button> <br/><br/>
+    <button id="t1c_method4" >Test1Component method4</button> <br/><br/>
+    <button id="t1c_method5"  >Test1Component method5</button> <br/><br/>
+    <button id="t1c_method6" >Test1Component method6</button> <br/><br/>
+    <div>
+        method6 callback value is :<span id="sp_method6"></span>
+    </div>
+    <button id="t1c_method7" >Test1Component method7</button> <br/>
+    <div>
+        method7 callback value is :<span id="sp_method7"></span>
+    </div>
+
+
+    <button id="t2c_method1">Test2Component method1</button> <br/><br/>
+    <button id="t2c_method2"  >Test2Component method2</button> <br/><br/>
+    <button id="t2c_method3"  >Test2Component method3</button> <br/><br/>
+    <button id="t2c_method4" >Test2Component method4</button> <br/><br/>
+    <button id="t2c_method5"  >Test2Component method5</button> <br/><br/>
+    <button id="t2c_method6" >Test2Component method6</button> <br/><br/>
+    <div>
+        t2method6 callback value is :<span id="sp_t2method6"></span>
+    </div>
+    <button id="t2c_method7" >Test2Component method7</button> <br/><br/>
+    <div>
+        t2method7 callback value is :<span id="sp_t2method7"></span>
+    </div>
+    <button id="t2c_method8" >Test2Component method8</button> <br/><br/>
+    <div>
+        t2method8 callback value is :<span id="sp_t2method8"></span>
+    </div>
+    <button id="filter_method">测试过滤器</button>
+</body>
+
+</html>
