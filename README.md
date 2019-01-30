@@ -10,7 +10,7 @@ Webhelper是一个为解决Webview的js与java源生api交互便捷的框架。�
 
 ### 1.架构示意图
 
-![image](D:/土巴兔/MPW.png)
+![image](https://github.com/Sam474850601/WebHelper/blob/master/MPW.png)
 
 
 
@@ -22,7 +22,7 @@ Webhelper是一个为解决Webview的js与java源生api交互便捷的框架。�
 
 ### 2.Web请求api时序图
 
-![image](D:/土巴兔/request_life.png)
+![image](https://github.com/Sam474850601/WebHelper/blob/master/request_life.png)
 
 
 
@@ -30,7 +30,12 @@ Webhelper是一个为解决Webview的js与java源生api交互便捷的框架。�
 
 
 
-![image](D:/土巴兔/class.png)
+![image](https://github.com/Sam474850601/WebHelper/blob/master/class.png)
+
+
+###  3.数据交互协议图
+
+![image](https://github.com/Sam474850601/WebHelper/blob/master/1_0.png)
 
 
 ## 三、引入腾讯TBS（X5 WebView）
