@@ -6,13 +6,7 @@ buildscript {
         maven {
             url 'http://ci.we.com/nexus/content/groups/public/'
         }
-        maven {
-            credentials {
-                username "admin"
-                password "admin123"
-            }
-            url "http://192.168.24.27:8081/nexus/content/repositories/thirdparty/"
-        }
+      
         jcenter()
         google()
     }
@@ -29,13 +23,7 @@ allprojects {
         maven {
             url 'http://ci.we.com/nexus/content/groups/public/'
         }
-        maven {
-            credentials {
-                username "admin"
-                password "admin123"
-            }
-            url "http://192.168.24.27:8081/nexus/content/repositories/thirdparty/"
-        }
+      
         jcenter()
         mavenCentral()
         google()
