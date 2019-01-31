@@ -13,12 +13,16 @@ import com.to8to.utils.webhelper.utils.WLog;
 
 public class MyApplication extends Application  {
 
+    private static Context context;
 
-
+    public static Context getText(){
+        return context;
+    }
 
     @Override
     public void onCreate() {
         super.onCreate();
+        context = this;
         WLog.init(getApplicationContext());
         //初始化x5内核
         X5InitService.init(getApplicationContext());

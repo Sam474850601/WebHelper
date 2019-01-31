@@ -3,9 +3,7 @@
 buildscript {
     
     repositories {
-        maven {
-            url 'http://ci.we.com/nexus/content/groups/public/'
-        }
+
       
         jcenter()
         google()
@@ -20,10 +18,7 @@ buildscript {
 
 allprojects {
     repositories {
-        maven {
-            url 'http://ci.we.com/nexus/content/groups/public/'
-        }
-      
+
         jcenter()
         mavenCentral()
         google()

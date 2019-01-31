@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://F:\workspace\webview\T8TWebviewUtilSample.iml" filepath="F:\workspace\webview\T8TWebviewUtilSample.iml" />
+      <module fileurl="file://F:/workspace/webview/T8TWebviewUtilSample.iml" filepath="F:/workspace/webview/T8TWebviewUtilSample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebHelper.iml" filepath="$PROJECT_DIR$/WebHelper.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/webhelper/webhelper.iml" filepath="$PROJECT_DIR$/webhelper/webhelper.iml" />
       <module fileurl="file://$PROJECT_DIR$/webview.iml" filepath="$PROJECT_DIR$/webview.iml" />

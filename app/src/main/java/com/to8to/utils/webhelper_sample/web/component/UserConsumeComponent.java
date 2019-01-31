@@ -5,6 +5,7 @@ import android.content.Context;
 import com.to8to.utils.webhelper.core.TBaseComponent;
 import com.to8to.utils.webhelper.core.ann.RequestMethod;
 import com.to8to.utils.webhelper.core.bean.Request;
+import com.to8to.utils.webhelper_sample.bean.UserLoginParam;
 import com.to8to.utils.webhelper_sample.model.ICallback;
 import com.to8to.utils.webhelper_sample.model.IUserModel;
 import com.to8to.utils.webhelper_sample.model.UserModel;
@@ -43,25 +44,5 @@ public class UserConsumeComponent extends TBaseComponent {
 
 
 
-    public static  class UserLoginParam
-    {
-        private String username;
-        private String password;
 
-        public String getUsername() {
-            return username;
-        }
-
-        public void setUsername(String username) {
-            this.username = username;
-        }
-
-        public String getPassword() {
-            return password;
-        }
-
-        public void setPassword(String password) {
-            this.password = password;
-        }
-    }
 }

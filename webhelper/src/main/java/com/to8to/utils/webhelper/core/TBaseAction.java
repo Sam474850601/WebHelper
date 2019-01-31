@@ -3,29 +3,21 @@ package com.to8to.utils.webhelper.core;
 import android.content.Context;
 import android.os.Handler;
 import android.text.TextUtils;
-import android.util.Base64;
 import android.util.Log;
 import android.webkit.JavascriptInterface;
 
-import com.google.gson.Gson;
 import com.to8to.utils.webhelper.core.ann.RequestMethod;
 import com.to8to.utils.webhelper.core.ann.Component;
 import com.to8to.utils.webhelper.core.bean.Request;
-import com.to8to.utils.webhelper.support.bean.ShareData;
 import com.to8to.utils.webhelper.support.ui.view.IView;
 import com.to8to.utils.webhelper.utils.ClassUtil;
 import com.to8to.utils.webhelper.utils.JsonUtil;
 import com.to8to.utils.webhelper.utils.WLog;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import java.lang.ref.WeakReference;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.lang.reflect.Type;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -262,8 +254,13 @@ public abstract class TBaseAction {
                 paramData[i] = request;
             }
             else
-            {
-                Object beanObject  =  JsonUtil.getBean(JsonUtil.toJson(data), paramClass);
+            {  Object beanObject;
+                if(data instanceof String){
+                    beanObject =JsonUtil.getBean((String) data, paramClass);
+                }else {
+                    beanObject =  JsonUtil.getBean(JsonUtil.toJson(data), paramClass);
+                }
+
                 paramData[i] = beanObject;
             }
         }

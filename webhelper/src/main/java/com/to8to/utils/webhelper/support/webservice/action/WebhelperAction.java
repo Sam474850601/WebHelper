@@ -7,7 +7,6 @@ import com.to8to.utils.webhelper.core.TBaseAction;
 import com.to8to.utils.webhelper.core.TBaseComponent;
 import com.to8to.utils.webhelper.core.ann.Action;
 import com.to8to.utils.webhelper.core.ann.Component;
-import com.to8to.utils.webhelper.support.webservice.component.DialogComponent;
 import com.to8to.utils.webhelper.support.webservice.component.ToolbarComponent;
 
 
@@ -28,12 +27,6 @@ public class WebhelperAction extends TBaseAction {
     public TBaseComponent getToolbarSettingMoudle()
     {
         return new ToolbarComponent();
-    }
-
-    @Component("dialogs")
-    public TBaseComponent getDialogComponent()
-    {
-        return new DialogComponent();
     }
 
 
